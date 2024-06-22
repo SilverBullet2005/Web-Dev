@@ -1,0 +1,119 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
+    background-color: #f4f4f4;
+    padding: 0;
+    margin: 0;
+}
+
+.container{
+    margin: auto;
+
+}
+
+header{
+    background: #35424a;
+    color:#ffffff;
+    padding-top: 30px;
+    min-height: 90px;
+    border-bottom: #e8491d 2px solid;
+}
+
+header a{
+    color: #ffffff;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 16px;
+    }
+
+header ul{
+        margin: 0;
+        padding: 0;
+        }
+
+header li{
+            float: left;
+            display: inline;
+            padding: 15px 10px 0 20px; /*top right bottom left*/
+        }
+
+header #branding{
+    float: left;
+    padding-right: 2px;
+}
+
+
+
+header #branding h1{
+    margin: 0;
+    padding-right: 500px;
+    padding-top: 30px;
+    font-size: 50px;
+}
+
+
+
+header nav{
+    float: left;
+    margin-left: 500px; 
+    margin-top: 5px;
+}
+        
+header .highlight, header .current a{
+    color: #e8491d;
+    
+   
+}
+
+header a:hover{
+    color: #cccccc;
+    font-weight: bold;
+}
+
+#Showcase{
+    min-height: 700px;
+    min-width: 200px;
+    background: url("https://media.defense.gov/2021/Nov/17/2002894698/2000/2000/0/211005-F-PO135-993.JPG") no-repeat 
+    }
+
+#newsletter{
+    padding: 30 px;
+    color: #ffffff;
+    background: #35424a;
+    height: 100px;    
+}
+
+#newsletter h1{
+    float: left;
+    margin-top: 30px;
+    margin-left: 30px;
+}
+
+#newsletter form{
+    float: right;
+    margin-top: -45px;
+    margin-right: 40px;
+}
+
+.button_1 {
+    height: 20px;
+    background: #e8491d;
+    color: #ffffff;
+    border:none;
+}
+
+.container {
+    display: flex;
+    justify-content: flex-end; /* Aligns children (boxes) to the right */
+    margin-left: 5px;
+    text-align: center;
+}
+
+footer {
+    color:#ffffff;
+    background-color: #e8491de8;
+    padding-left: 500px;
+    height: 50px;
+    padding-top: 3px;
+}

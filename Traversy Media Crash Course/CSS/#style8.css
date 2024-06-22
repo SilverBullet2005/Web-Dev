@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&display=swap');
+
+body{
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: italic;
+    overflow-y: scroll;
+}
+
+header ul{
+    margin: 0;
+    padding: 0;
+    }
+
+header li{
+        float: left;
+        display: inline;
+        padding: 15px 10px 0 20px; /*top right bottom left*/
+    }
+
+header nav{
+        float: left;
+        margin-left: 500px; 
+        margin-top: 5px;
+    }

@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&display=swap');
+body{
+    background-color: #181818;
+    color: #fff;
+    
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: italic;
+    overflow-y: scroll;
+    
+}
+
+h1,h2,h3,h4{
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: italic;
+}
+
+#wrapper{
+    display: flex;
+    flex-direction: row; 
+}
+
+#left{
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    align-items: center;  
+    justify-content: center;
+    height: 100vh;
+}
+   
+#Sign-In{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    padding-bottom: 16px;
+}
+
+#right{
+    flex: 1;
+}
+
+#Sign-In .form{
+    width: 80%;
+    padding-bottom: 48px;
+}
+
+#Sign-In .logo{
+    margin-bottom: 8px;
+}
+
+#Sign-In .logo img{
+    width:300px;
+    margin-top: 50px;
+}
+
+#Sign-In label{
+    font-size: 0.9rem;
+    line-height: 2rem;
+    font-weight: 500;
+}
+
+#Sign-In .text-input{
+    margin-bottom: 1.3rem;
+    width: 100%;
+    border-radius: 2px;
+    background: #181818;
+    border: 1px solid #555;
+    color: #ccc;
+    padding: 0.5 rem;
+    line-height: 1.3rem;
+}
+
+.Submission{
+    width: 100%;
+    height: 30px;
+    background: orangered;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: italic;
+    cursor: pointer;
+}
+
+.Submission:hover{
+    background: aquamarine;
+}
+
+.or{
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.NewAcc{
+    width: 45%;
+    background: orangered;
+    padding: 10px;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: italic;
+    cursor: pointer;
+}
+
+.NewAcc:hover{
+    background: aquamarine;
+} 
+
+#main-footer{
+    margin-top: 50px;
+}
+
+#main-footer a{
+    color: orangered;
+}
+
+.links a{
+    text-decoration: none;
+    color: #ccc;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    line-height: 5px;
+}
+
+.showcase-content{
+    margin-top: 250px;
+    margin-left: 50px;
+    
+}
+
+#showcase{
+    background: url("https://static.vecteezy.com/system/resources/thumbnails/011/607/144/small_2x/dark-realistic-and-luxury-futuristic-modern-texture-abstract-background-free-photo.jpg") no-repeat;
+    height: 100%; 
+    width: 100%;
+    
+}   
+.Trial{
+    width: 45%;
+    background: orangered;
+    padding: 10px;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: italic;
+    cursor: pointer;
+    margin-left: 80px;
+}
+
+.Trial:hover{
+    background: aquamarine;
+} 
