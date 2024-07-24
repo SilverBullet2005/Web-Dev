@@ -1,21 +1,29 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
- *{
+
+* {
     margin: 0;
     padding: 0;
-    box-sizing:border-box;
+    box-sizing: border-box;
     font-family: "Poppins", sans-serif;
     font-weight: 400;
     font-style: normal;
-} 
-
-.portfolio-container{
-    min-height: 100vh;
-    width: 100%;
-    display: flex;
     
 }
 
-.navbar{
+body{
+    overflow-y: scroll;
+    height: 300px; /* or any fixed height */
+    /* overflow-y: auto; */
+}
+
+.portfolio-container {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+   
+}
+
+.navbar {
     height: 100px;
     display: flex;
     gap: 3.5rem;
@@ -25,24 +33,191 @@
     position: fixed;
 }
 
-.navbar li{
+.navbar li {
     list-style: none;
 }
 
-.navbar a{
+.navbar a {
     text-decoration: none;
     text-transform: uppercase;
-    color: hsl(218, 94%, 44%);
+    color: #fff;
+    position: relative;
+    transition: 0.3s;
+    opacity: 0;
+    animation: slideTop 5s ease forwards;
 }
 
-.Left-Container{
+.Left-Container {
     background-color: #262525;
     width: 70%;
     height: 100vh;
+    padding: 0;
+    margin: 0;
+    border: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.Right-Container{
-    background-color: #3877FF;
+.Right-Container {
+    background: linear-gradient(#262525 15%,#3877FF 95%);
     width: 30%;
     height: 100vh;
 }
+
+.icons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    opacity: 0;
+    animation: slideRight 2s ease forwards;
+   
+}
+
+.icons .fa-brands {
+    color: aquamarine;
+    margin-top: 30px;
+    margin-left: 20px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.Content{
+    margin-left: 200px;
+    color: #fff;
+    margin-right: 300px;
+    margin-top: 50px;
+}
+
+.Content h1{
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #5DB9EE;
+    white-space: nowrap; /* Prevents line breaks */
+    overflow: hidden; /* Hides overflow content */
+    text-overflow: ellipsis; /* Adds ellipsis for overflowing text */
+    opacity: 0;
+    animation: slideRight 2s ease forwards;
+}
+
+.Content h2{
+    opacity: 0;
+    animation: slideRight 2s ease forwards;
+}
+
+.Intro{
+    opacity: 0;
+    animation: slideLeft 2s ease forwards;
+}
+
+.Content span{
+    color: #5DB9EE;
+}
+
+.Button{
+    border-color: #5DB9EE;
+}
+
+
+.Design .circle{
+     aspect-ratio: 1;
+     position: absolute;
+     border-radius: 50%;
+     top:55%;
+     left:70%;
+     transform:translate(-50%, -50%);
+}
+
+.circle:nth-child(1){
+    background: linear-gradient(90deg, transparent 50%, #262525 50%);
+    width: 30rem; 
+}
+
+.circle:nth-child(2){
+    background-image: url("image/Profile.jpeg");
+    width: 25rem; 
+    background-size: cover; /* Ensure the image covers the entire circle */
+    background-position: center; /* Adjust the position to focus on the lower part of the image */
+    box-shadow: 0 0 1rem #fff, 0 0 2rem #3877FF, 0 0 4rem #3877FF; 
+}
+
+.navbar li a::after,.navbar .active::after{
+    content: "";
+    position: absolute;
+    background: #fff;
+    width: 100%;
+    height: 0.1rem;
+    left: 0;
+    top: 20px;
+    transform: scaleX(0);
+    transition: transform 0.5s;
+}
+
+.navbar li  a:hover::after, .navbar .active::after{
+    transform: scaleX(1);
+}  
+
+.btn-container button{
+    border: 0.1rem solid #5DB9EE;
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    margin-top: 30px;
+    opacity: 0;
+    animation: slideTop 2s ease forwards;
+}
+   
+button:nth-child(1){
+    background: #5DB9EE;
+}
+
+button:nth-child(2){
+    background: transparent;
+    color: #5DB9EE;
+}
+
+.icons .fa-brands:hover{
+    color: aquamarine;
+    margin-top: 30px;
+    margin-left: 20px;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+@keyframes slideTop{
+    0%{
+        transform: translateY(+100px);
+        opacity: 0;
+    }
+
+    100%{
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+
+@keyframes slideRight{
+    0%{
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+
+    100%{
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+
+@keyframes slideLeft{
+    0%{
+        transform: translateX(+100px);
+        opacity: 0;
+    }
+
+    100%{
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+
+
