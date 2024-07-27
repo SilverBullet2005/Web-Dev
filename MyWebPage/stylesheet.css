@@ -20,17 +20,19 @@ body{
     min-height: 100vh;
     width: 100%;
     display: flex;
-   
 }
 
 .navbar {
+    position: fixed;
     height: 100px;
     display: flex;
     gap: 3.5rem;
-    margin-left: 290px;
+    margin-left: 400px;
     justify-content: center;
     align-items: center;
-    position: fixed;
+   
+    z-index: 1000;
+    
 }
 
 .navbar li {
@@ -48,7 +50,8 @@ body{
 }
 
 .Left-Container {
-    background-color: #262525;
+    background-color: #262525; 
+  
     width: 70%;
     height: 100vh;
     padding: 0;
@@ -103,11 +106,18 @@ body{
 .Content h2{
     opacity: 0;
     animation: slideRight 2s ease forwards;
+    border-bottom: none;
 }
 
 .Intro{
     opacity: 0;
     animation: slideLeft 2s ease forwards;
+}
+
+.Content .p2{
+    opacity: 0;
+    animation: slideRight 2s ease forwards;
+    font-size: 17px;
 }
 
 .Content span{
@@ -165,13 +175,19 @@ body{
     margin-top: 30px;
     opacity: 0;
     animation: slideTop 2s ease forwards;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.btn-container button:hover{
+    box-shadow: 1px 1px 20px #012290f7, 1px 1px 40px #0053b8f7;
 }
    
-button:nth-child(1){
+.btn-1{
     background: #5DB9EE;
 }
 
-button:nth-child(2){
+.btn-2{
     background: transparent;
     color: #5DB9EE;
 }
@@ -183,6 +199,232 @@ button:nth-child(2){
     font-size: 30px;
     cursor: pointer;
 }
+
+.My-Skills{
+    background: #0A1929;
+    height: 170vh;
+    
+}
+.My-Skills h1{
+    
+    margin-left: 400px;
+    color: #fff;
+    font-size: 50px;
+   
+}
+
+.My-Skills span{
+    color: #0ef;
+}
+
+.Skills-List{
+    color: #fff;
+    font-size: 13px;
+    line-height: 1.9;
+    margin-bottom: 4rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(259px,1fr));    
+    grid-gap: 90px;
+    margin-top: 50px;
+    margin-left: 30px;
+    margin-right: 30px;
+   
+}
+
+.Skill-1, .Skill-2, .Skill-3, .Skill-4, .Skill-5, .Skill-6{
+    background-color: transparent;
+    font-weight: 13px;
+    border-right: 10px;
+    border-radius: 20px;
+    box-shadow: 1px 1px 20px #012290f7, 1px 1px 40px #0053b8f7;
+    height: 350px;
+}
+
+.Skill-1 p, .Skill-2 p, .Skill-3 p, .Skill-4 p{
+    margin-left: 15px;
+}
+
+.Skill-5 p{
+    margin-left: 15px;
+    margin-top: 30px;
+}
+
+.Skill-3 img{
+    margin-left: 50px;
+    width: 200px;
+}
+
+.Skill-3 p{
+    margin-top: 2px;
+}
+
+.Skill-4 img{
+    margin-left: 100px;
+    margin-top: 10px;
+    width: 100px;
+}
+
+.Skill-4 p{
+    margin-top: 1px;
+}
+
+.Skill-6 p{
+    margin-left: 12px;
+    margin-top: 15px;
+}
+
+.Skill-6 img{
+   margin-left: 120px;
+   margin-top: 22px;
+}
+
+.Skill-1 img, .Skill-2 img, .Skill-5 img{
+    margin-left: 70px;
+    margin-top: 20px;
+    width: 150px;
+}
+
+.Skills-List h2{
+    color: #0ef;
+    opacity: 0;
+}
+
+.Contact-Me{
+    background-color: #0A1929;
+}
+
+.Message{
+    color: #fff;
+}
+
+.Message h1{
+    color: #fff;
+    margin-left: 30px;
+    font-size: 80px;
+}
+
+.Message h2{
+    color: #fff;
+    font-size: 40px;
+    border-bottom: none;
+    margin-right: 5px;
+}
+
+.Message span, .PRO span{
+    color: #0ef;
+}
+
+.Content-End, .Message h2{
+    margin-left: 30px;
+}
+
+.Content-End img{
+    width: 30px;
+    margin-left: 1px;
+}
+
+.Contact-Me {
+    background-color: #0A1929;
+    display: flex;
+    justify-content: space-between;
+    padding: 50px;
+}
+
+.Message {
+    color: #fff;
+    width: 50%;
+}
+
+.Contact-Form {
+    width: 40%;
+    margin-top: 40px;
+}
+
+.Contact-Form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.Contact-Form input, .Contact-Form textarea {
+    margin-bottom: 15px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #0ef;
+    background-color: transparent;
+    color: #fff;
+}
+
+.Contact-Form input[type="submit"] {
+    background-color: #0ef;
+    color: #0A1929;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 0 10px #0ef, 0 0 20px #0ef, 0 0 30px #0ef;
+}
+
+.Contact-Form input[type="submit"]:hover {
+    background-color: #0ef;
+}
+
+body {
+    background-color: #0A1929;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+  
+.PRO{
+    margin-left: 400px;
+    font-size: 50px;
+}
+
+.PRO span{
+    color: #0ef;
+}
+
+.skills-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    max-width: 400px;
+    margin: 0 auto;
+}
+  
+.skill{
+    text-align: center;
+}
+  
+.progress-ring{
+    position: relative;
+}
+  
+.progress-ring__circle {
+    transition: none;
+    transform: rotate(-90deg);
+    transform-origin: 50% 50%;
+}
+  
+.progress-ring__circle.progress {
+    stroke-dasharray: 326.7256359733385; /* Circumference of the circle */
+    stroke-dashoffset: 326.7256359733385; /* Start from full offset */
+    box-shadow: 0 0 10px #0ef, 0 0 20px #0ef, 0 0 30px #0ef;
+
+}
+  
+
+.percent {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 24px;
+    font-weight: bold;
+}
+  
+p {
+    margin-top: 10px;
+    font-size: 14px;
+}
+  
 
 @keyframes slideTop{
     0%{
@@ -219,5 +461,4 @@ button:nth-child(2){
         opacity: 1;
     }
 }
-
 

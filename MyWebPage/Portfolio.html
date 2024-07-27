@@ -1,51 +1,175 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
-    <link rel="stylesheet" href="stylesheet.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
-    
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="stylesheet.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
 </head>
+
 <body>
-    <div class="portfolio-container">
-        <ul class="navbar">
-            <li><a href="#" class="active">Home</a></li>
-            <li><a href="#">About Me</a></li>
-            <li><a href="#">Skills</a></li>
-            <li><a href="#">Portfolio</a></li>
-            <li><a href="#">Contact Me</a></li>
-        </ul>
-        
-        <div class="Left-Container">
-            <div class="icons">
-                <a href="https://open.spotify.com/user/bqttaszkwlv0mdjaawt9gc3tf" target="_blank"><i class="fa-brands fa-spotify"></i></a>
-                <a href="https://discord.com/GIN" target="_blank"><i class="fa-brands fa-discord"></i></a>
-                <a href="https://github.com/SilverBullet2005" target="_blank"><i class="fa-brands fa-github"></i></a>
-                <!--<a href="#" target="_blank">--><i class="fa-brands fa-square-instagram"></i></a>
-            </div>
-            <div class="Content">
-                <h2>Hi ! I am <span class = "text"></span></h2>
-                <h1>Electronics and Computer Engineer</h1>
-                <br>
-                <p class="Intro">A senior member of <a href="https://www.roboknights.in/" target="_blank" style="color: #5DB9EE;"><em> RoboKnights</em></a> (Robotics Club) and  <a href="https://aeross.org/" target="_blank" style="color: #5DB9EE;"><em><strong>Aeross</strong></em></a> (The Aerospace Society) of Delhi Public School R.K. Puram. Main skills include Blender, Fusion 360, Q-Blade, and Arduino.</p>
-                <div class="btn-container">
-                    <button>My Achievements</button>
-                    <button>View Projects</button>
-                </div>
-            </div>  
-        </div> 
+  <ul class="navbar">
+    <li><a href="#home" class="active">Home</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#">Portfolio</a></li>
+    <li><a href="#contact-me">Contact Me</a></li>
+  </ul>
 
-        <div class="Right-Container">
-            <div class="Design">
-                <div class="circle"></div>
-                <div class="circle"></div>
-            </div>
+  <section id="home">
+  <div class="portfolio-container">
+    <div class="Left-Container">
+      <div class="icons">
+        <a href="https://open.spotify.com/user/bqttaszkwlv0mdjaawt9gc3tf" target="_blank"><i class="fa-brands fa-spotify"></i></a>
+        <a href="https://discord.com/GIN" target="_blank"><i class="fa-brands fa-discord"></i></a>
+        <a href="https://github.com/SilverBullet2005" target="_blank"><i class="fa-brands fa-github"></i></a>
+        <i class="fa-brands fa-square-instagram"></i></a>
+      </div>
+
+      <div class="Content">
+        <h2>Hi ! I am <span class = "text"></span></h2>
+        <h1>Electronics and Computer Engineer</h1>
+        <br>
+        <p class="Intro">A senior member of <a href="https://www.roboknights.in/" target="_blank" style="color: #5DB9EE;"><em> RoboKnights</em></a> (Robotics Club) and  <a href="https://aeross.org/" target="_blank" style="color: #5DB9EE;"><em><strong>Aeross</strong></em></a> (The Aerospace Society) of Delhi Public School R.K. Puram.</p>
+        <br>
+        <p class = "p2">Main skills include: <span class = "text-2"></span></p>
+        <div class="btn-container">
+          <a href="https://drive.google.com/file/d/1yxy8OGAHHPK1gk_7U-2xZYbhkVDwA68m/view?usp=drive_link" target="_blank">
+            <button class = "btn-1">My Achievements</button>
+          </a>
+          <a href="https://drive.google.com/drive/u/0/folders/1dpamtOO6g86qX7NAKW5ASiB4jFHkKnPf" target="_blank">
+            <button class = "btn-2">View Projects</button>
+          </a>
         </div>
+      </div>  
+    </div> 
 
+    <div class="Right-Container">
+      <div class="Design">
+        <div class="circle"></div>
+        <div class="circle"></div>
+      </div>
     </div>
-    <script src = "main.js"></script>
+  </div>
+  </section>
+
+  <section id="skills">
+  <div class = "My-Skills">
+    <h1>My Technical <span>Skills</span></h1> 
+    <div class = "Skills-List">
+
+    <div class = "Skill-1">
+      <img src = "../image/Blender_Logo.png" width = "70px"> 
+      <h2>Blender</h2>
+      <p><span>Blender</span> is a free and open-source 3D computer graphics software tool set that runs on Windows, MacOS, BSD, Haiku, and Linux. It is used for creating animated films, visual effects, art, 3D-printed models, motion graphics, interactive 3D applications, virtual reality, and, formerly, video games.</p>
+    </div>
+
+    <div class = "Skill-2">
+      <img src = "../image/Fusion360_Logo.png" width = "70px" margin-top = "20px";> 
+      <h2>Fusion360</h2>
+      <p><span>Fusion360</span> is a commercial computer-aided design, computer-aided manufacturing, computer-aided engineering and printed circuit board design software application, developed by Autodesk. It is available for Windows, macOS and web browser, with simplified applications available for Android and iOS.</p>
+    </div>
+
+    <div class = "Skill-3">
+      <img src = "../image/Python_Logo.png" width = "200px"> 
+      <p><span>Python</span> is a high-level, general-purpose programming language. Its design philosophy emphasizes code readability with the use of significant indentation. Python is dynamically typed and garbage-collected. It supports programming paradigms, including structured, object-oriented and functional programming.</p>
+    </div>
+
+    <div class = "Skill-4">
+      <img src = "../image/QBlade_Logo.png" width = "100px"> 
+      <p><span>QBlade</span> is a beyond the state of the art aero-servo-hydro-elastic code, covering the complete range of aspects required for wind turbine design, simulation, and certification. It incorporates implementation of highly efficient novel aerodynamic, structural dynamic and hydrodynamic solvers in a modern, object-oriented C++ framework.</p>
+    </div>
+
+    <div class = "Skill-5">
+      <img src = "../image/SimScale_Logo.png" width = "100px"> 
+      <p><span>SimScale</span> is a computer-aided engineering software product based on cloud computing. SimScale was developed by SimScale GmbH and allows computational fluid dynamics, finite element analysis and thermal simulations. The backend of the platform uses open source and proprietary simulation codes.</p>
+    </div>
+
+    <div class = "Skill-6">
+      <img src = "../image/Arduino_Logo.png" width = "70px"> 
+      <p><span>Arduino</span> is an Italian open-source hardware and software company, project, and user community that designs and manufactures single-board microcontrollers and microcontroller kits for building digital devices.</p>
+    </div>
+  </div> 
+  </section>  
+  
+  <section id="professional-skills">
+  <h1 class = "PRO">Professional <span>Skills</span></h1>
+  <br>
+  <br>   
+  <div class="skills-container">
+    <div class="skill">
+      <div class="progress-ring">
+        <svg width="120" height="120">
+          <circle class="progress-ring__circle" stroke="#333333" stroke-width="8" fill="transparent" r="52" cx="60" cy="60"/>
+          <circle class="progress-ring__circle progress" stroke="#00ffff" stroke-width="8" fill="transparent" r="52" cx="60" cy="60" stroke-linecap="round"/>
+        </svg>
+        <div class="percent">90%</div>
+      </div>
+      <p>Creativity</p>
+    </div>
+
+    <div class="skill">
+      <div class="progress-ring">
+        <svg width="120" height="120">
+          <circle class="progress-ring__circle" stroke="#333333" stroke-width="8" fill="transparent" r="52" cx="60" cy="60"/>
+          <circle class="progress-ring__circle progress" stroke="#00ffff" stroke-width="8" fill="transparent" r="52" cx="60" cy="60" stroke-linecap="round"/>
+        </svg>
+        <div class="percent">65%</div>
+      </div>
+      <p>Communication</p>
+    </div>
+
+    <div class="skill">
+      <div class="progress-ring">
+        <svg width="120" height="120">
+          <circle class="progress-ring__circle" stroke="#333333" stroke-width="8" fill="transparent" r="52" cx="60" cy="60"/>
+          <circle class="progress-ring__circle progress" stroke="#00ffff" stroke-width="8" fill="transparent" r="52" cx="60" cy="60" stroke-linecap="round"/>
+        </svg>
+        <div class="percent">75%</div>
+      </div>    
+      <p>Problem Solving</p>
+    </div>
+
+    <div class="skill">
+      <div class="progress-ring">
+        <svg width="120" height="120">
+          <circle class="progress-ring__circle" stroke="#333333" stroke-width="8" fill="transparent" r="52" cx="60" cy="60"/>
+          <circle class="progress-ring__circle progress" stroke="#00ffff" stroke-width="8" fill="transparent" r="52" cx="60" cy="60" stroke-linecap="round"/>
+        </svg>
+        <div class="percent">85%</div>
+      </div>
+      <p>Teamwork</p>
+    </div>
+  </div>  
+  </section>
+  <section id="contact-me">
+  <div class = "Contact-Me">
+    <div class = "Message">
+      <h1> Contact <span>Me</span></h1>
+      <h2>Get in <span>Touch !</span></h2>
+      <div class = "Content-End">
+        <p1> Hey there! I’d love to hear from you. Whether you have a question, want to collaborate, or just want to say hi, feel free to drop a message. You can reach out to me through any of my social media handles provided on the Home page.</p>
+        <br>
+        <p2>Furthermore, please feel free to contact me via email regarding this matter.</p2>
+        <br>
+        <br>
+        <p3><span>Email:</span> KushagraGoel2005@gmail.com</p3>
+      </div>    
+    </div>
+
+    <div class="Contact-Form">
+    <form>
+      <input type="" placeholder="Enter Your Name" required>
+      <input type="email" placeholder="Enter Your Email" required>
+      <input type="" placeholder="Enter The Subject">
+      <textarea name="" id="" cols="40" rows="10" placeholder="Enter Your Review"></textarea>
+      <input type="submit" value = "submit" class="send">
+    </form>
+  </div>
+  </section>  
+    
+
+  <script src = "main.js"></script>
 </body>
 </html>
